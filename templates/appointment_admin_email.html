@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Appointment</title>
+</head>
+<body>
+    <h1>New {{ appointment.speciality }} Appointment</h1>
+    <p>Dear Admin,</p>
+    <p>A new appointment has been made:</p>
+    <ul>
+        <li><strong>Appointment Code:</strong> {{ appointment.code }}</li>
+        <li><strong>Patient Name:</strong> {{ appointment.patient.first_name }} {{ appointment.patient.last_name }}</li>
+        <li><strong>Appointment Time:</strong> {{ appointment.time }}</li>
+        <li><strong>Place:</strong> {{ appointment.organisation.name }}</li>
+        <li><strong>Address:</strong> {{ appointment.organisation.address }}</li>
+        <li><strong>Suburb:</strong> {{ booking.organisation.suburb }}</li>
+        <li><strong>City:</strong> {{ appointment.organisation.city }}</li>
+        <li><strong>Appointment Date:</strong> {{ appointment.date }}</li>
+        <li><strong>Appointment Time:</strong> {{ appointment.time }}</li>
+    </ul>
+</body>
+</html>
